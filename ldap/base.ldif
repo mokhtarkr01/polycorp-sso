@@ -1,0 +1,36 @@
+dn: ou=people,dc=polycorp,dc=com
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=polycorp,dc=com
+objectClass: organizationalUnit
+ou: groups
+
+dn: uid=alice,ou=people,dc=polycorp,dc=com
+objectClass: inetOrgPerson
+uid: alice
+cn: Alice Martin
+sn: Martin
+givenName: Alice
+mail: alice@polycorp.com
+userPassword: alice123
+
+dn: uid=emma,ou=people,dc=polycorp,dc=com
+objectClass: inetOrgPerson
+uid: emma
+cn: Emma Durand
+sn: Durand
+givenName: Emma
+mail: emma@polycorp.com
+userPassword: emma123
+
+dn: cn=rh,ou=groups,dc=polycorp,dc=com
+objectClass: groupOfNames
+cn: rh
+member: uid=alice,ou=people,dc=polycorp,dc=com
+
+dn: cn=employes,ou=groups,dc=polycorp,dc=com
+objectClass: groupOfNames
+cn: employes
+member: uid=alice,ou=people,dc=polycorp,dc=com
+member: uid=emma,ou=people,dc=polycorp,dc=com

@@ -1,0 +1,10 @@
+dn: ou=services,dc=polycorp,dc=com
+objectClass: organizationalUnit
+ou: services
+
+dn: uid=keycloak-svc,ou=services,dc=polycorp,dc=com
+objectClass: inetOrgPerson
+uid: keycloak-svc
+cn: Keycloak Service
+sn: Service
+userPassword: svc-secret-123
